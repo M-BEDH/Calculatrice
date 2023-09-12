@@ -2,7 +2,7 @@
   "name": "calculatrice",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://melbm.github.io/calculatrice/",
+  "homepage": "https://m-bedh.github.io/Calculatrice/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
