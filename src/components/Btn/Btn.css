@@ -1,0 +1,32 @@
+.btn {
+    width: 45px;
+    background-color: #7fffd4;
+    margin: 5px 5px 5px 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button {
+    width: 45px;
+    height: 45px;
+    opacity: 0.5;
+    border-radius: 20%;
+}
+
+.App-header{
+    background-color: #1b81818a;
+}
+
+.App-header h1{
+    text-align: center;
+    color: #ffffff;
+}
+
+.App-body{
+    max-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 10px;
+}
