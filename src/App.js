@@ -7,7 +7,7 @@ function App() {
   const [expression, setExpression] = useState('');
   const [result, setResult] = useState('');
 
-  const handleButtonClick = (value) => {
+  const handleClickButton = (value) => {
     // Cette fonction sera appelée lors du click sur un bouton avec la valeur "value".
     console.log('Button clicked with value:', value);
     if (value === '=') {
@@ -50,7 +50,7 @@ function App() {
           value={expression}
           readOnly={true}
         />
-         <Btn onClick={handleButtonClick} />
+         <Btn onClick={handleClickButton} />
       
           <input
             type='text'
