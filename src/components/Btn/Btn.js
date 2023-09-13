@@ -1,10 +1,14 @@
 import './Btn.css';
 
-function Btn({ onClick }) {
-  const chiffresEtOperateurs = ['C', 'CE','/', '*', '-', '+', '.','%', '**', ...Array(10).keys(), '='];
 
+function Btn({ onClick }) {
+  const chiffresEtOperateurs = [
+    'C', 'CE', '/', '*', '-', '+', '.', '%', '**', ...Array(10).keys(), '='
+  ];
+
+  
   return (
-    <div className='App-body'>
+    <div className='btn-body'>
       {chiffresEtOperateurs.map((value) => (
         <button className='btn' key={value} onClick={() => onClick(value)}>
           {value}

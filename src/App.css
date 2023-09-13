@@ -2,10 +2,23 @@
     width: 240px;
     margin: auto;
     background-color: brown;
+    border-radius: 22px;
+}
+.App-header {
+    background-color: #1b81818a;
+    border-radius: 22px 22px 0 0;
+}
+
+.App-header h1 {
+    text-align: center;
+    color: #ffffff;
 }
 
 .expression-input{
-    width: 100%;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
     height: 30px;
     background-color: #ffffff;
 }
@@ -15,3 +28,4 @@
     height: 20px;
     background-color: #ffffff;
 }
+

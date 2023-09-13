@@ -13,16 +13,7 @@ button {
     border-radius: 20%;
 }
 
-.App-header{
-    background-color: #1b81818a;
-}
-
-.App-header h1{
-    text-align: center;
-    color: #ffffff;
-}
-
-.App-body{
+.btn-body{
     max-width: 200px;
     display: flex;
     flex-wrap: wrap;
