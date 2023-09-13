@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import Btn from './components/Btn/Btn';
+import { evaluate } from 'mathjs';
+
 import './App.css';
+
+
 
 function App() {
   const [expression, setExpression] = useState('');
@@ -23,7 +27,11 @@ function App() {
   };
 
   const evaluateExpression = (expr) => {
-    return eval(expr);
+    try {
+      return evaluate(expr);
+    } catch (error) {
+      return 'Erreur';
+    }
   };
 
   return (
