@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import Btn from './components/Btn/Btn';
-import { evaluate } from 'mathjs';
-
+import { evaluate, sqrt } from 'mathjs';
 import './App.css';
-
-
+import Btn from './components/Btn/Btn';
 
 function App() {
   const [expression, setExpression] = useState('');
@@ -16,7 +13,7 @@ function App() {
       setExpression(expression.slice(0, -1));
     } else if (value === '=') {
       try {
-        const result = evaluateExpression(expression);
+        const result = evaluate(expression);
         setExpression(result.toString());
       } catch (error) {
         setExpression('Erreur');
@@ -26,11 +23,12 @@ function App() {
     }
   };
 
-  const evaluateExpression = (expr) => {
+  const handleSquareRoot = () => {
     try {
-      return evaluate(expr);
+      const result = sqrt(evaluate(expression));
+      setExpression(result.toString());
     } catch (error) {
-      return 'Erreur';
+      setExpression('Erreur');
     }
   };
 
@@ -40,14 +38,13 @@ function App() {
         <h1>Calculatrice</h1>
       </header>
       <div className='App-body'>
-         <input
+        <input
           type='text'
           className='expression-input'
           value={expression}
           readOnly
         />
-        <Btn onClick={handleClickButton} />
-       
+        <Btn onClick={handleClickButton} onSquareRoot={handleSquareRoot} />
       </div>
     </div>
   );
