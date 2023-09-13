@@ -3,7 +3,7 @@ import './Btn.css';
 
 function Btn({ onClick }) {
   const chiffresEtOperateurs = [
-    'C', 'CE', '/', '*', '-', '+', '.', '%', '**', ...Array(10).keys(), '='
+  'C', 'CE', '(', ')','/', '*', '-', '+', '.', '%', '^', ...Array(10).keys(), '='
   ];
 
   
