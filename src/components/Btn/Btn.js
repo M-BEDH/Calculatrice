@@ -2,7 +2,7 @@ import './Btn.css';
 
 function Btn({ onClick, onSquareRoot }) {
   const chiffresEtOperateurs = [
-    'C', 'CE', '(', ')', '/', '*', '-', '+',  ...Array(10).keys(), '.', '%', '^', '√', ' ', '='
+    'C', 'CE', '(', ')', '/', '*', '-', '+',  ...Array(10).keys(), '.', '%', '^', '√', 
   ];
 
   return (
@@ -17,7 +17,8 @@ function Btn({ onClick, onSquareRoot }) {
         }}>
           {value}
         </button>
-      ))}
+      ))} 
+      <button className='btnEgal' onClick={() => onClick('=')}> = </button>
     </div>
   );
 }
